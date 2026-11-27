@@ -1,0 +1,64 @@
+2026-11-27 09:13:58,901 - ERROR - Error al conectar a la base de datos: No module named 'mysql'
+2026-11-27 09:15:05,504 - ERROR - Error al conectar a la base de datos: No module named 'mysql'
+2026-11-27 09:50:06,617 - ERROR - Error al conectar a la base de datos 'dwolist': No module named 'mysql'
+2026-11-27 09:50:53,872 - ERROR - Error al conectar a la base de datos 'dwolist': No module named 'mysql'
+2026-11-27 09:52:45,717 - INFO - Conexión a la base de datos 'dwolist' establecida correctamente.
+2026-11-27 09:52:47,811 - INFO - Archivo data/olist_customers_dataset.csv leído exitosamente (99441 filas).
+2026-11-27 09:52:55,333 - INFO - Archivo data/olist_geolocation_dataset.csv leído exitosamente (1000163 filas).
+2026-11-27 09:52:56,735 - INFO - Archivo data/olist_order_items_dataset.csv leído exitosamente (112650 filas).
+2026-11-27 09:52:57,169 - INFO - Archivo data/olist_order_payments_dataset.csv leído exitosamente (103886 filas).
+2026-11-27 09:52:58,589 - INFO - Archivo data/olist_order_reviews_dataset.csv leído exitosamente (99225 filas).
+2026-11-27 09:52:59,975 - INFO - Archivo data/olist_orders_dataset.csv leído exitosamente (99441 filas).
+2026-11-27 09:53:00,346 - INFO - Archivo data/olist_products_dataset.csv leído exitosamente (32951 filas).
+2026-11-27 09:53:00,384 - INFO - Archivo data/olist_sellers_dataset.csv leído exitosamente (3095 filas).
+2026-11-27 09:53:00,387 - INFO - Archivo data/product_category_name_translation.csv leído exitosamente (71 filas).
+2026-11-27 09:55:08,922 - INFO - Conexión a la base de datos 'dwolist' establecida correctamente.
+2026-11-27 09:55:09,403 - INFO - Archivo data/olist_customers_dataset.csv leído exitosamente (99441 filas).
+2026-11-27 09:55:12,023 - INFO - Archivo data/olist_geolocation_dataset.csv leído exitosamente (1000163 filas).
+2026-11-27 09:55:12,720 - INFO - Archivo data/olist_order_items_dataset.csv leído exitosamente (112650 filas).
+2026-11-27 09:55:12,916 - INFO - Archivo data/olist_order_payments_dataset.csv leído exitosamente (103886 filas).
+2026-11-27 09:55:13,800 - INFO - Archivo data/olist_order_reviews_dataset.csv leído exitosamente (99225 filas).
+2026-11-27 09:55:14,477 - INFO - Archivo data/olist_orders_dataset.csv leído exitosamente (99441 filas).
+2026-11-27 09:55:14,551 - INFO - Archivo data/olist_products_dataset.csv leído exitosamente (32951 filas).
+2026-11-27 09:55:14,563 - INFO - Archivo data/olist_sellers_dataset.csv leído exitosamente (3095 filas).
+2026-11-27 09:55:14,564 - INFO - Archivo data/product_category_name_translation.csv leído exitosamente (71 filas).
+2026-11-27 09:55:21,547 - INFO - Datos cargados exitosamente en 'dim_customers' (99441 filas).
+2026-11-27 09:55:23,777 - INFO - Datos cargados exitosamente en 'dim_products' (32951 filas).
+2026-11-27 09:55:24,414 - INFO - Datos cargados exitosamente en 'dim_sellers' (3095 filas).
+2026-11-27 09:55:24,539 - INFO - Datos cargados exitosamente en 'dim_date' (634 filas).
+2026-11-27 09:55:24,546 - ERROR - Error al cargar datos en la tabla dim_payment: Execution failed on sql 'INSERT INTO dim_payment (payment_sk, primary_payment_type, payment_installments, is_installment) VALUES (:payment_sk, :primary_payment_type, :payment_installments, :is_installment)': (mysql.connector.errors.ProgrammingError) 1054 (42S22): Unknown column 'is_installment' in 'field list'
+[SQL: INSERT INTO dim_payment (payment_sk, primary_payment_type, payment_installments, is_installment) VALUES (%(payment_sk)s, %(primary_payment_type)s, %(payment_installments)s, %(is_installment)s)]
+[parameters: [{'payment_sk': 1, 'primary_payment_type': 'credit_card', 'payment_installments': 8, 'is_installment': 1}, {'payment_sk': 2, 'primary_payment_type': 'credit_card', 'payment_installments': 1, 'is_installment': 0}, {'payment_sk': 3, 'primary_payment_type': 'credit_card', 'payment_installments': 2, 'is_installment': 1}, {'payment_sk': 4, 'primary_payment_type': 'credit_card', 'payment_installments': 3, 'is_installment': 1}, {'payment_sk': 5, 'primary_payment_type': 'credit_card', 'payment_installments': 6, 'is_installment': 1}, {'payment_sk': 6, 'primary_payment_type': 'boleto', 'payment_installments': 1, 'is_installment': 0}, {'payment_sk': 7, 'primary_payment_type': 'credit_card', 'payment_installments': 5, 'is_installment': 1}, {'payment_sk': 8, 'primary_payment_type': 'credit_card', 'payment_installments': 4, 'is_installment': 1}  ... displaying 10 of 28 total bound parameter sets ...  {'payment_sk': 27, 'primary_payment_type': 'credit_card', 'payment_installments': 16, 'is_installment': 1}, {'payment_sk': 28, 'primary_payment_type': 'credit_card', 'payment_installments': 23, 'is_installment': 1}]]
+(Background on this error at: https://sqlalche.me/e/21/f405)
+2026-11-27 10:26:14,210 - INFO - Conexión a la base de datos 'dwolist' establecida correctamente.
+2026-11-27 10:26:14,750 - INFO - Archivo data/olist_customers_dataset.csv leído exitosamente (99441 filas).
+2026-11-27 10:26:17,560 - INFO - Archivo data/olist_geolocation_dataset.csv leído exitosamente (1000163 filas).
+2026-11-27 10:26:18,202 - INFO - Archivo data/olist_order_items_dataset.csv leído exitosamente (112650 filas).
+2026-11-27 10:26:18,432 - INFO - Archivo data/olist_order_payments_dataset.csv leído exitosamente (103886 filas).
+2026-11-27 10:26:19,030 - INFO - Archivo data/olist_order_reviews_dataset.csv leído exitosamente (99225 filas).
+2026-11-27 10:26:19,631 - INFO - Archivo data/olist_orders_dataset.csv leído exitosamente (99441 filas).
+2026-11-27 10:26:19,732 - INFO - Archivo data/olist_products_dataset.csv leído exitosamente (32951 filas).
+2026-11-27 10:26:19,794 - INFO - Archivo data/olist_sellers_dataset.csv leído exitosamente (3095 filas).
+2026-11-27 10:26:19,826 - INFO - Archivo data/product_category_name_translation.csv leído exitosamente (71 filas).
+2026-11-27 10:26:26,791 - INFO - Datos cargados exitosamente en 'dim_customers' (99441 filas).
+2026-11-27 10:26:26,933 - ERROR - Error al cargar datos en la tabla dim_products: Execution failed on sql 'INSERT INTO dim_products (product_sk, product_id, category_name, category_name_english, weight_g, length_cm, height_cm, width_cm) VALUES (:product_sk, :product_id, :category_name, :category_name_english, :weight_g, :length_cm, :height_cm, :width_cm)': (mysql.connector.errors.IntegrityError) 1062 (23000): Duplicate entry '1' for key 'dim_products.PRIMARY'
+[SQL: INSERT INTO dim_products (product_sk, product_id, category_name, category_name_english, weight_g, length_cm, height_cm, width_cm) VALUES (%(product_sk)s, %(product_id)s, %(category_name)s, %(category_name_english)s, %(weight_g)s, %(length_cm)s, %(height_cm)s, %(width_cm)s)]
+[parameters: [{'product_sk': 1, 'product_id': '1e9e8ef04dbcff4541ed26657ea517e5', 'category_name': 'perfumaria', 'category_name_english': 'perfumery', 'weight_g': 225.0, 'length_cm': 16.0, 'height_cm': 10.0, 'width_cm': 14.0}, {'product_sk': 2, 'product_id': '3aa071139cb16b67ca9e5dea641aaa2f', 'category_name': 'artes', 'category_name_english': 'art', 'weight_g': 1000.0, 'length_cm': 30.0, 'height_cm': 18.0, 'width_cm': 20.0}, {'product_sk': 3, 'product_id': '96bd76ec8810374ed1b65e291975717f', 'category_name': 'esporte_lazer', 'category_name_english': 'sports_leisure', 'weight_g': 154.0, 'length_cm': 18.0, 'height_cm': 9.0, 'width_cm': 15.0}, {'product_sk': 4, 'product_id': 'cef67bcfe19066a932b7673e239eb23d', 'category_name': 'bebes', 'category_name_english': 'baby', 'weight_g': 371.0, 'length_cm': 26.0, 'height_cm': 4.0, 'width_cm': 26.0}, {'product_sk': 5, 'product_id': '9dc1a7de274444849c219cff195d0b71', 'category_name': 'utilidades_domesticas', 'category_name_english': 'housewares', 'weight_g': 625.0, 'length_cm': 20.0, 'height_cm': 17.0, 'width_cm': 13.0}, {'product_sk': 6, 'product_id': '41d3672d4792049fa1779bb35283ed13', 'category_name': 'instrumentos_musicais', 'category_name_english': 'musical_instruments', 'weight_g': 200.0, 'length_cm': 38.0, 'height_cm': 5.0, 'width_cm': 11.0}, {'product_sk': 7, 'product_id': '732bd381ad09e530fe0a5f457d81becb', 'category_name': 'cool_stuff', 'category_name_english': 'cool_stuff', 'weight_g': 18350.0, 'length_cm': 70.0, 'height_cm': 24.0, 'width_cm': 44.0}, {'product_sk': 8, 'product_id': '2548af3e6e77a690cf3eb6368e9ab61e', 'category_name': 'moveis_decoracao', 'category_name_english': 'furniture_decor', 'weight_g': 900.0, 'length_cm': 40.0, 'height_cm': 8.0, 'width_cm': 40.0}  ... displaying 10 of 5000 total bound parameter sets ...  {'product_sk': 4999, 'product_id': 'a037c98ed926711d7513cf779d788536', 'category_name': 'ferramentas_jardim', 'category_name_english': 'garden_tools', 'weight_g': 250.0, 'length_cm': 30.0, 'height_cm': 6.0, 'width_cm': 11.0}, {'product_sk': 5000, 'product_id': '9b51d10170f788eda1e19bd4e8d2d06e', 'category_name': 'beleza_saude', 'category_name_english': 'health_beauty', 'weight_g': 700.0, 'length_cm': 19.0, 'height_cm': 11.0, 'width_cm': 23.0}]]
+(Background on this error at: https://sqlalche.me/e/21/gkpj)
+2026-11-27 10:30:10,726 - INFO - Conexión a la base de datos 'dwolist' establecida correctamente.
+2026-11-27 10:30:11,506 - INFO - Archivo data/olist_customers_dataset.csv leído exitosamente (99441 filas).
+2026-11-27 10:30:14,296 - INFO - Archivo data/olist_geolocation_dataset.csv leído exitosamente (1000163 filas).
+2026-11-27 10:30:14,851 - INFO - Archivo data/olist_order_items_dataset.csv leído exitosamente (112650 filas).
+2026-11-27 10:30:15,073 - INFO - Archivo data/olist_order_payments_dataset.csv leído exitosamente (103886 filas).
+2026-11-27 10:30:15,635 - INFO - Archivo data/olist_order_reviews_dataset.csv leído exitosamente (99225 filas).
+2026-11-27 10:30:16,312 - INFO - Archivo data/olist_orders_dataset.csv leído exitosamente (99441 filas).
+2026-11-27 10:30:16,396 - INFO - Archivo data/olist_products_dataset.csv leído exitosamente (32951 filas).
+2026-11-27 10:30:16,409 - INFO - Archivo data/olist_sellers_dataset.csv leído exitosamente (3095 filas).
+2026-11-27 10:30:16,410 - INFO - Archivo data/product_category_name_translation.csv leído exitosamente (71 filas).
+2026-11-27 10:30:23,598 - INFO - Datos cargados exitosamente en 'dim_customers' (99441 filas).
+2026-11-27 10:30:25,702 - INFO - Datos cargados exitosamente en 'dim_products' (32951 filas).
+2026-11-27 10:30:25,944 - INFO - Datos cargados exitosamente en 'dim_sellers' (3095 filas).
+2026-11-27 10:30:26,045 - INFO - Datos cargados exitosamente en 'dim_date' (634 filas).
+2026-11-27 10:30:26,076 - INFO - Datos cargados exitosamente en 'dim_payment' (28 filas).
+2026-11-27 10:30:41,162 - INFO - Datos cargados exitosamente en 'fact_sales' (112650 filas).
+2026-11-27 10:30:41,162 - INFO - Pipeline de datos ejecutado exitosamente.
